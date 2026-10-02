@@ -25,3 +25,36 @@
 | Документация API | SpringDoc OpenAPI (Swagger UI) |
 
 ## Структура папок проекта
+corporate-travel-expenses/
+├── src/
+│ ├── main/
+│ │ ├── java/com/example/travelexpenses/
+│ │ │ ├── config/ # Конфигурация Spring
+│ │ │ ├── controller/ # REST-контроллеры
+│ │ │ ├── service/ # Бизнес-логика
+│ │ │ ├── repository/ # Spring Data JPA
+│ │ │ ├── entity/ # JPA-сущности
+│ │ │ ├── dto/ # DTO
+│ │ │ ├── mapper/ # MapStruct-мапперы
+│ │ │ ├── security/ # JWT, аутентификация
+│ │ │ ├── exception/ # Обработка ошибок
+│ │ │ └── TravelExpensesApplication.java
+│ │ └── resources/
+│ │ ├── application.yml
+│ │ ├── application-dev.yml
+│ │ ├── db/migration/ # Flyway-скрипты
+│ │ └── templates/ # Thymeleaf
+│ └── test/
+│ └── java/com/example/travelexpenses/
+├── docs/ # Документация
+├── .env.example
+├── .gitignore
+├── pom.xml
+└── README.md
+
+## Инструкции по развёртыванию
+
+1. Клонировать репозиторий:
+   ```bash
+   git clone https://github.com/elizaveta18072008-dev/corporate-travel-expenses.git
+   cd corporate-travel-expenses
